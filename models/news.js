@@ -38,9 +38,19 @@ module.exports = (sequelize, DataTypes) => {
         notNull: {msg: "image required"}
       }
     },
+    content:{
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: {msg: "content required"},
+        notNull: {msg: "content required"}
+      }
+
+    },
     UserId: DataTypes.INTEGER,
     allowNull: false
-  }, {
+    },
+   {
     sequelize,
     modelName: 'News',
   });
