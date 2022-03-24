@@ -4,7 +4,7 @@ const sportController = require('../controllers/sportController')
 
 
 
-router.get("/football", sportController.getAll)
+router.get("/news", sportController.getAll)
 
 
 
